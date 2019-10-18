@@ -1,1 +1,17 @@
 theme: jekyll-theme-cayman
+
+# Site settings
+title: Nagle Home
+SEOTitle: Nagle | Nagle Blog
+header-img: 
+email: zhang.nagle@gmail.com
+description: "Nagle's HOME"
+keyword: "Nagle, Nalgle Blog, iOS, Apple, iPhone"
+url: "https://nagle.dev"
+baseurl: ""
+github_repo: "https://github.com/zhangnianlin/zhangnianlin.github.io"
+
+# Sidebar settings
+sidebar: true  
+sidebar-about-description: "A Devops, Try to be a Hacker"
+sidebar-avatar: /img/avatar-by.jpg
