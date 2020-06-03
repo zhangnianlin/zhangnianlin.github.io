@@ -3,8 +3,6 @@
 
 **Email**: zhang.nagle@gmail.com
 
-**Phone**: 18621639249
-
 ## Profile
 * * *
 Profile Skilled DevOps Engineer with 4+ years experience. passionate with problem solving. Strong experienced with elastic stack and monitoring ecosystem. maintainer of 500+ instances on bare metal in IDC. Maintained multiple region(AWS JP/CN) Saas platform. Dream to be a hacker, a emacs lover. 
