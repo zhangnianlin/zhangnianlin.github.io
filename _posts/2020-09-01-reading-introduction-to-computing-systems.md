@@ -1,5 +1,5 @@
 ---
-title: "Reading Introduction to Computing Systems: From Bits and Gates to C and Beyond"
+title: "[Reading] Introduction to Computing Systems: From Bits and Gates to C and Beyond"
 subtitle: "「笔记」"
 layout: post
 author: "NagleZh"
