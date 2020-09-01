@@ -20,7 +20,7 @@
 
 title: Nagle's Home
 email: nagle.zhang@sap.com zhang.nlage@gmail.com
-description: >- Dream to be a hacker, a emacs lover.
+description: Dream to be a hacker, a emacs lover.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nagle.top" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  NagleZhang
