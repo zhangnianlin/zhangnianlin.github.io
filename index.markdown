@@ -1,7 +1,5 @@
 ---
 layout: home
-title: CV
-permalink: /about/
 ---
 
 ## Personal Information
