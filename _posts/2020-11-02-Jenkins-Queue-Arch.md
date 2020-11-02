@@ -1,5 +1,5 @@
 ---
-title: "[Review] Jenkins 的调度过程以及组件的架构"
+title: "[源码解析] Jenkins 的调度过程以及相关组件的源码解读"
 subtitle: "「笔记」"
 layout: post
 author: "NagleZh"
@@ -7,7 +7,7 @@ header-style: text
 lang: zh
 tags:
   - 笔记
-  - 基础
+  - 源码
   - Jenkins
 ---
 
