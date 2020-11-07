@@ -19,10 +19,10 @@ tags:
 Jenkins 作为 CI/CD 的开源产品，历史比较悠久，能够存活至今，第一个可以说是社区支持，其次，代码本身肯定也是存在比较可取的优势，从而从多数软件当中脱颖而出，所以，阅读及分析代码，能够给后续设计其他的产品带来很好的思路以及见解。  
 历史悠久的另外一个点就是，代码量巨大，所以本文只是记录并分析其中调度的一个小部分。更多的是关于各种 class 之间的关系，具体包含以下几点：  
 
-  1. Jenkins.java Jenkins 的主要执行对象，所有的调度，运算，任务都是绑定在该对象上。
+  1. `Jenkins.java` Jenkins 的主要执行对象，所有的调度，运算，任务都是绑定在该对象上。
   2. 运算资源， 或者称之为 Infrastructure 层，提供 CPU， 内存，等运算资源的设备，主要用到 `Label.java`/`Node.java`/`Computer.java`/`Cloud.java`
-  3. 执行任务， 在 Jenkins 里面，也就是一个一个需要执行的 job，底层用 Thread 来实现，具体用到的文件有 Item.java/Job.java/Run.java/Executor.java
-  4. 调度逻辑， 调度如何分配需要执行的任务与运算资源的关系，主要用到的有 Queue.java/NodeProvisioner.java/MultiStageTimeSeries.java/TimeSeries.java
+  3. 执行任务， 在 Jenkins 里面，也就是一个一个需要执行的 job，底层用 Thread 来实现，具体用到的文件有 `Item.java`/`Job.java`/`Run.java`/`Executor.java`
+  4. 调度逻辑， 调度如何分配需要执行的任务与运算资源的关系，主要用到的有 `Queue.java`/`NodeProvisioner.java`/`MultiStageTimeSeries.java`/`TimeSeries.java`
 
 ## 运算资源
 在 Jenkins 的配置过程当中，我们都需要添加 Node 对象，而 `Node.java` & `Label.java` 主要负责的是基础的配置，`Label` 这个对象是负责一组 Node， 因为在 Build 的场景当中，一个 job ，可能是 C 写的，也可以是 java 写的，我们在 build 当中，可以通过 `Label` 来进行区分一组 node，而源代码里也是用的是这种方式， 一个 `Label` 对象，管理多个 `Node` 对象，而 `Label` 对象也引用了 `NodeProvisioner` 对象（调度过程当中会提到），在该 `Label` 一旦遇到运算资源不足，就会根据 `NodeProvisioner` 当中的 `StandardStrategyImpl` 的 Inner Class 对象进行初始化新的 `Node`。  
