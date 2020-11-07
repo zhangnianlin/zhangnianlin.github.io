@@ -39,9 +39,9 @@ Jenkins 实现了另外一个对象 `Computer` 来管理计算节点运行时候
 ## 调度逻辑
 在诸多运算当中，如何进行调度运算资源，可以说是 Jenkins 里面的一个值得挖掘的点，Jenkins 需要平衡 `builds（Executor）` 和运算资源之间的关系，保证运算充足的情况下，不去启动多余的 Node，在运算徒增的时候，不会太快，也不会太慢的去启动新的node，这个在被无数人使用的开源产品中，相信也是一个挑战。  
 Jenkins 有几个类值得一提， `Queue.java` 中的 `Queue`， 以及 `NodeProvisioner` 当中的 `NodeProvisioner` 和 `StandardStrategyImpl` 这个 inner class。  
-    - Queue ，顾名思义，也就是需要被执行的任务进行排队的地方，任务的调度，会在 Queue 的这个类的管理下，进行执行。  
-    - NodeProvisioner 则是通过调用 Queue， 来管理下面的 Node 资源。  
-    - 而具体管理的资源，也就是在 StandardStrategyImpl 这个 Inner class 当中被实现。  
+- Queue ，顾名思义，也就是需要被执行的任务进行排队的地方，任务的调度，会在 Queue 的这个类的管理下，进行执行。  
+- NodeProvisioner 则是通过调用 Queue， 来管理下面的 Node 资源。  
+- 而具体管理的资源，也就是在 StandardStrategyImpl 这个 Inner class 当中被实现。  
     
 #### 移动平均值的概念 EMA
 在调度过程当中，使用了一个概念叫做 `exponential moving average (EMA)`，中文译乘移动平均值，移动平均值的概念是作用于需的 Executor 的数量。  
