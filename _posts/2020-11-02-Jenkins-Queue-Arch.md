@@ -31,10 +31,10 @@ Jenkins 实现了另外一个对象 `Computer` 来管理计算节点运行时候
     
 ## 执行任务
 执行任务，在 Jenkins 当中分的层次比较多， 主要包含，Item -> Job -> Run -> Executor -> Thread, 下面咱们一个一个的梳理一下。  
-    - Item： 在 Jenkins 的主页当中，其实新手一般要做的第一件事情就是， Create  Item， 这个 Item ，和源码当中的 Item 也是相对应的，一个 Item ，也就是一组 Job，Item 本身也可以是一个 Job。  
-    - Job： 一个 Job 在 Jenkins 当中，就是一个 Build 的所有静态的配置信息，包含的东西譬如，build 的代码，需要被 build 的源代码，每一次 Build 的时间以及需要，Build 的 git repo 等等。  
-    - Run： 上面的 Job 可以总结为一个 Build 的静态配置， 那么 Run 就是每一次需要执行的 Build 运行时需要的管理器，管理的东西有 pre build stage， post build stage, build result 等等。  
-    - Thread: 每一次 Build ，也会包装在一个 java Thread 当中进行执行。  
+- Item： 在 Jenkins 的主页当中，其实新手一般要做的第一件事情就是， Create  Item， 这个 Item ，和源码当中的 Item 也是相对应的，一个 Item ，也就是一组 Job，Item 本身也可以是一个 Job。
+- Job： 一个 Job 在 Jenkins 当中，就是一个 Build 的所有静态的配置信息，包含的东西譬如，build 的代码，需要被 build 的源代码，每一次 Build 的时间以及需要，Build 的 git repo 等等。
+- Run： 上面的 Job 可以总结为一个 Build 的静态配置， 那么 Run 就是每一次需要执行的 Build 运行时需要的管理器，管理的东西有 pre build stage， post build stage, build result 等等。
+- Thread: 每一次 Build ，也会包装在一个 java Thread 当中进行执行。
 
 ## 调度逻辑
 在诸多运算当中，如何进行调度运算资源，可以说是 Jenkins 里面的一个值得挖掘的点，Jenkins 需要平衡 `builds（Executor）` 和运算资源之间的关系，保证运算充足的情况下，不去启动多余的 Node，在运算徒增的时候，不会太快，也不会太慢的去启动新的node，这个在被无数人使用的开源产品中，相信也是一个挑战。  
