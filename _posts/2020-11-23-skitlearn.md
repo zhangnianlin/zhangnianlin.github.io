@@ -13,18 +13,18 @@ tags:
 
 https://scikit-learn.org/
 
+```
 feature |
         | -> data
 sample  |
 
-```
 X = [[1,2,3],
  [4,5,6],
  [7,8,9]]
 ```
 
 - feature: 1,2,3,4,5,6,7,8,9  each data is feature
-- sample:  `X` is sample, 多各 feature 组成一个 sample，一个 sample 和 target，则是训练所需要的数据。
+- sample:  上面的代码注释当中，`X` is sample, 多各 feature 组成一个 sample，一个 sample 和 target，则是训练所需要的数据。
 - target/label 是 sample 所代表的内容。
 - X 代表样本数据(sample)
 - y 代表结果(target)
