@@ -37,6 +37,12 @@ https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
 - K-Means
 - Logistic Regression
 
+#### Decision Tree
+这个算法充分利用了二分法。  
+算法的计算方式是，运算出每一个 feature 的值，根据 feature 的值进行二分。 虽然 sample 可能是无限的，但是 feature 是有限的。  
+feature 的组合方式也是有限的，decision Tree 就是将每一个 feature 的值二分为 True 或者 False，再将这些 Feature 进行组合。  
+一个 decision Tree 的所有可能性是 2^count(feature) 的可能性。  
+
 算法一般分类
 - Regression
 - Classification
@@ -53,3 +59,4 @@ https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
 
 ## PreProcessing
 在 sample 的处理过程当中，训练算法的输入源所对应的数据结构需要是一致的，那么将数据源进行一致化的过程，称之为 preprocessing。
+例如在 numpy 当中，可以通过 array 来定义一个数据集，进而通过 reshape 进行处理。而在 reshape(a,b)当中，a 代表的是 sample， b 代表的是 feature。
