@@ -42,6 +42,24 @@ https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
 算法的计算方式是，运算出每一个 feature 的值，根据 feature 的值进行二分。 虽然 sample 可能是无限的，但是 feature 是有限的。  
 feature 的组合方式也是有限的，decision Tree 就是将每一个 feature 的值二分为 True 或者 False，再将这些 Feature 进行组合。  
 一个 decision Tree 的所有可能性是 2^count(feature) 的可能性。  
+```
+from sklearn.tree import DecisionTreeClassifier
+import pandas as pd
+import numpy as np
+
+sample = [0,1,2,3,4,4,4,4]
+
+dtc = DecisionTreeClassifier()
+features_columns = ['pregnant','glucose','bp','skin','insulin','bmi','pedigree','age']
+X = data[features_columns]
+y = data.label
+dtc.fit(X,y)
+
+y_pred = dtc.predict(np.array(sample).reshape(1,-1))
+
+print (y_pred)
+
+```
 
 算法一般分类
 - Regression
