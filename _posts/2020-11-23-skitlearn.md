@@ -30,9 +30,10 @@ X = [[1,2,3],
 - X 代表样本数据(sample)
 - y 代表结果(target)
 
-# 涉及到的算法
+# 算法 
+## 涉及到的算法
 https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
-## 常用算法列举
+### 常用算法列举
 - Decision Tree
 - K-Means
 - Logistic Regression
@@ -42,6 +43,9 @@ https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
 算法的计算方式是，运算出每一个 feature 的值，根据 feature 的值进行二分。 虽然 sample 可能是无限的，但是 feature 是有限的。  
 feature 的组合方式也是有限的，decision Tree 就是将每一个 feature 的值二分为 True 或者 False，再将这些 Feature 进行组合。  
 一个 decision Tree 的所有可能性是 2^count(feature) 的可能性。  
+
+那么决定二分的这个算法，基于两种理论， 分别是 gini 以及 entropy；  
+
 ```
 from sklearn.tree import DecisionTreeClassifier
 import pandas as pd
@@ -61,10 +65,22 @@ print (y_pred)
 
 ```
 
-算法一般分类
+#### K-Means
+该算法总体下来的理解就是多维度的 group by。  
+相较于 classfication 的算法从数据中训练算法，Clustering 的算法更多的是从数据中提取特征，并根据这个特征将数据分组（这个特征的定义是，多个 feature 的集合）  
+根据这些分组，以及这些特征，我们可以针对性的推送内容，或者对分组内的数据进行一定的干预。  
+例： 对公司评价比较低同时评分比较好的同事，可以提前咨询在公司存在的问题，进而避免离职；  
+对公司评价比较高，同时评分比较高的同事，可以考虑是瓶颈期已到，可以提出转岗需求。  
+
+
+## 算法一般分类
 - Regression
 - Classification
+classification 的逻辑更多是，从数据当中提取更多的逻辑，然后将逻辑应用在其他的数据当中，进行预测。  
+这种预测更多的是，将数据分类的方式。  
 - Clustering
+clustering 的逻辑是，提取离散数据当中的概念，一般是提前准备好多个维度，然后针对这些维度，直接生成数据聚合的结果。  
+上面提取的这些结果，可能以图表的形式进行显示。 直接给予人一定的商业价值。  
 
 # 机器学习方法
 ## Model Selection
