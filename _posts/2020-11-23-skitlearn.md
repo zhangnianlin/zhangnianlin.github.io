@@ -12,6 +12,7 @@ tags:
 # Data Analysis Basic Knowledge
 
 https://scikit-learn.org/
+https://archive.ics.uci.edu/ml/datasets.php
 
 ```
 feature |
