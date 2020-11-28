@@ -35,8 +35,10 @@ X = [[1,2,3],
 https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
 ### 常用算法列举
 - Decision Tree
+- GradientBoostingClassifier
 - K-Means
 - Logistic Regression
+
 
 #### Decision Tree
 这个算法充分利用了二分法。  
@@ -73,6 +75,7 @@ print (y_pred)
 对公司评价比较高，同时评分比较高的同事，可以考虑是瓶颈期已到，可以提出转岗需求。  
 
 
+#### GradientBoostringClassfier
 ## 算法一般分类
 - Regression
 - Classification
