@@ -1,5 +1,5 @@
 ---
-title: "[源码解析] Jenkins 的调度过程以及相关组件的源码解读"
+title: "[ 源码解析 ] Jenkins 的调度过程以及相关组件的源码解读"
 subtitle: "「笔记」"
 layout: post
 author: "NagleZh"

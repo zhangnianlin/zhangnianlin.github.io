@@ -1,5 +1,5 @@
 ---
-title: "[Review] 如何手动注册自己的 HTTPS 证书以及通讯过程"
+title: "[ Review ] 如何手动注册自己的 HTTPS 证书以及通讯过程"
 subtitle: "「笔记」"
 layout: post
 author: "NagleZh"
