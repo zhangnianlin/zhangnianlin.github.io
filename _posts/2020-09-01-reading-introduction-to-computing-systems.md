@@ -1,5 +1,5 @@
 ---
-title: "[Reading] 计算机系统概论 - 冯诺依曼结构"
+title: "[ Read ] 计算机系统概论 - 冯诺依曼结构"
 subtitle: "「笔记」"
 layout: post
 author: "NagleZh"

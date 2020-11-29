@@ -1,5 +1,5 @@
 ---
-title: "[Reading] 平常遇到的一些工程问题汇总"
+title: "[ Read ] 平常遇到的一些工程问题汇总"
 subtitle: "「笔记」"
 layout: post
 author: "NagleZh"

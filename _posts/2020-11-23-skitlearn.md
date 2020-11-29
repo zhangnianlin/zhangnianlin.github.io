@@ -1,5 +1,5 @@
 ---
-title: "[Reading] skitlearn 机器学习的一些初步认知"
+title: "[ Read ] skitlearn 机器学习的一些初步认知"
 subtitle: "「笔记」"
 layout: post
 author: "NagleZh"
@@ -11,8 +11,8 @@ tags:
 
 # Data Analysis Basic Knowledge
 
-https://scikit-learn.org/
-https://archive.ics.uci.edu/ml/datasets.php
+https://scikit-learn.org/  
+https://archive.ics.uci.edu/ml/datasets.php  
 
 ```
 feature |

@@ -1,5 +1,5 @@
 ---
-title: "[Reading] 关于学习这件事情"
+title: "[ Read ] 关于学习这件事情"
 subtitle: "「笔记」"
 layout: post
 author: "NagleZh"

@@ -1,5 +1,5 @@
 ---
-title: "[Reading] 《离散数学及其应用》阅读笔记"
+title: "[ Read ] 《离散数学及其应用》阅读笔记"
 subtitle: "「笔记」"
 layout: post
 author: "NagleZh"
