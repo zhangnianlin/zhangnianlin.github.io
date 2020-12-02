@@ -1,5 +1,5 @@
 ---
-title: "[ Learn ] 最小二乘法的认识"
+title: "[ Learn ] Cincinnati 大学离散数学课程笔记"
 subtitle: "「笔记」"
 layout: post
 author: "NagleZh"
