@@ -91,9 +91,23 @@ clustering 的逻辑是，提取离散数据当中的概念，一般是提前准
 训练集一般分为训练样本，也结果结果，在程序中一般使用 X，y 来进行表示。  
 在现有的基础上，我们可以吧训练的数据集，进行拆分。一部分为训练集，一个部分为测试集合。  
 进而把训练集提供给到算法进行计算，得到一些函数（在程序成，也就放在一个对象下面）  
-然后，把测试机的 sample 提供给到现有的函数（对象）进行预测。
-最后，把预测的结果，测试集合当中的 target 进行比对，算出准确率。
+然后，把测试机的 sample 提供给到现有的函数（对象）进行预测。  
+最后，把预测的结果，测试集合当中的 target 进行比对，算出准确率。  
+
+### 评估方法
+kfold ， 将数据集分为n块，每一块单独作为测试集，得出得分之后，在进行平均`mean(x)`。得出一个比较合理的算法的分。  
+方差，平均之后，有可能存在最高分最低分的情况，利用方差 `sum((x(i) - mean(x))^2); i = 1...n`;  
+平均差， 方差的开方
 
 ## PreProcessing
 在 sample 的处理过程当中，训练算法的输入源所对应的数据结构需要是一致的，那么将数据源进行一致化的过程，称之为 preprocessing。
 例如在 numpy 当中，可以通过 array 来定义一个数据集，进而通过 reshape 进行处理。而在 reshape(a,b)当中，a 代表的是 sample， b 代表的是 feature。
+
+```
+各种 preprocessing 的方式方法。
+
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import Normalizer
+from sklearn.preprocessing import Binarizer
+```
