@@ -12,5 +12,5 @@ tags:
 ---
 
 # refer 
-https://mindhacks.cn/2008/09/21/the-magical-bayesian-method/
+https://mindhacks.cn/2008/09/21/the-magical-bayesian-method/  
 http://norvig.com/spell-correct.html
