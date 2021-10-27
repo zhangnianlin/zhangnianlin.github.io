@@ -28,7 +28,7 @@ tags:
 2. 图： 若干个给定的顶点，以及每个顶点连接，形成的图形的集合
 3. 树： N 个有限节点组成的具有层次关系的集合。
    ...
-
+   
 # 基本概念
 ## 逻辑
 逻辑是离散数学当中的基本单位，其实在计算机的基础当中，也很常见，比如说指令集当中最基本的运算方法 and or not，就是最基本的一个逻辑结构。  
@@ -53,7 +53,39 @@ q: 我去打球
 我不是外星人.  
 
 #### 复合命题
+
 多个命题之间, 用命题逻辑连接起来, 形成复合命题.  
+
+1. 有限个体域当中消去量词
+有限个体域 D={a1, a2, a3, ... , an}
+ForAll A(x) <=> A(a1) ^ A(a2) ^ A(a3) ^ ... ^ A(an)
+ThereExist A(x) <=> A(a1) v A(a2) v A(a3) v ... v A(an)
+
+2. 量词否定
+Not ForAll A(x) <=> ThereExist Not A(x)
+Not ThereExist A(x) <=> ForAll Not A(x)
+
+3. 量词管辖域的收缩与扩张
+B 中不包含 x
+ForAll x (A(x) v B) <=> ForAll x A(x) v B
+ForAll x (A(x) ^ B) <=> ForAll x A(x) ^ B
+ForAll x (A(x) -> B) <=> ThereExist x A(x) -> B
+ForAll x (B -> A(x)) <=> B -> ForAll x A(x)
+
+4. 量词分配
+
+ForAll x (A(x)^B(x)) <=> ForAll x A(x) ^ ForAll B(x)
+ThereExist x (A(x)vB(X)) <=> ThereExist x A(x) v ThereExist B(x)
+
+5. 前束范式( 所有的量词都在前面, 每一个量词作用域达到公式的结尾 )
+任何一个公式都可以化成前束范式.
+ForAll x F(x) v Not ThereExist x G(x,y)
+<=> ForAll x F(x) v ForAll Not x G(x,y)
+<=> ForAll x F(x) v ForAll Not z G(z, y)
+<=> ForAll x (F(x) v ForAll Not z G(z,y))
+<=> ForAll x ForAll z(F(x) v Not z G(z,y)) # 前束范式
+<=> ForAll x ForAll z(G(z,y) -> F(x))      # 前束范式
+
 
 #### 等值演算
 两个符合命题拥有相同的真值表, 那么可以说两个命题是等价的, 既然存在等价的命题. 那么命题之间就可以进行转换, 也就是命题演算.
