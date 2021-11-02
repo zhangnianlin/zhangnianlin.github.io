@@ -1,4 +1,18 @@
-# Mathematics for Computer Science
+---
+title: "[ Learn ] MIT Online Course Mathematics for computer science""
+subtitle: "「笔记」"
+layout: post
+author: "NagleZh"
+header-style: text
+lang: zh
+tags:
+  - 离散数学
+  - 基础
+---
+
+# Mathematics for Computer Science(MIT)
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/
+
 
 ## Proof
 
