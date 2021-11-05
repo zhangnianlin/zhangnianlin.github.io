@@ -61,8 +61,7 @@ _这个地方得出了矛盾, 不懂_
 t 本身可数, 所以 Q'(t) 将不返回.
 而根据 Q' 的定义, 它之后在 not(t halts) 的时候返回.
 
-
-
-
-
-
+GCD theorem
+1. Prime Factorization
+2. 欧几里得法得 gcd 
+3. 线性组合
