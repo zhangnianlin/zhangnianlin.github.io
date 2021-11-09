@@ -15,8 +15,28 @@ https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-m
 
 
 ## Proof
+### proof technique
 
-### state machine
+#### proof by contradiction
+#### proof by cases
+
+### Well Ordering Principle
+### Binary Relation
+二元关系, 就是两个 set 之间, 每个元素之间的关系一个集合.
+
+A 与 B 集合, 就存在 A 中的每一个元素而言, 于 B 中的元素有 (>= 1,1, <=1) 三种形式存在.   
+- >=1 A 的每一个元素, 与 B 中 >=1 个元素存在关系, 称之为 total.  
+- <=1 A 中的每一个元素, 与 B 中的 <=1 的元素存在关系, 称之为 function.  
+而就 B 中的每一个元素, 与 A 中的元素有 (>=1, 1, <=1 ) 三种形式存在.  
+- >=1 B 中的每个元素, 与 A 中的 >=1 个元素存在关系, 称之为 surjection.  
+- <=1 B 中的每个元素, 与 A 中的 <=1 个元素存在关系, 称之为 injection.  
+
+而 A 与 B 中, 正好等于 1 , 称之为 bijection.  
+
+### Induction
+证明  base , 然后证明若 n , n+1.
+
+### State Machine
 
 不变性.
 
@@ -32,12 +52,36 @@ application two:
 
 机器人在坐标系当中, 只能按照对角线移动, (0,0) 能够 移动到 (1,0) 吗? 
 
-
 application three:
 如何用寄存器 x,y,z,r 来快速计算 a^b.
 
+如何构建一个 state machine , 最重要的就是, 在大脑里面构建一个不变的条件.这个条件本身,就是 state machine.
 
 ### countable & uncountable
+
+一个 set 是否是可数的? 如何定义?   
+一个 set 是可数的, 就是说, 给定一个顺序, 我根据其 index 顺利的获取其内容.  
+N 就是可数的, 因为 0, 1, 2 , 给定顺序, 就可以得到相应的值. 1 就是 1, 2 就是 2.  
+有了可数集合之后, 我们说, 如果一个集合可以和一个可数集合建立 bijiection ,那么这个集合也是可数的.  
+
+比如说, 有理数, 我们很难说他是可数与否. 但是, 我们可以把有理数定义为 m/n , 这样, 就可以和 N x N 建立 bijection . 从而证明有理数也是可数的.  
+
+紧接着, 我们来看看那些是不可数的, 并且证明这个集合不可数.  
+譬如说, {0,1}Ω 就是下面的集合  
+```
+a {0 1 1 1 ... 1 1 0 0 0 1 0 ... }
+b {0 0 1 1 ... 1 1 0 0 0 1 0 ... }
+c {0 1 0 1 ... 1 1 0 0 0 1 0 ... }
+d {0 1 1 1 ... 1 1 0 0 0 1 0 ... }
+e {1 1 1 1 ... 1 1 1 1 0 0 0 ... }
+. {...}
+. {...}
+. {...}
+```
+
+我们可以做到的是, 从上向下, 从左到右, 每一位, 都取反.(对角线)  
+这样, 有了对角线之后, 我们可以说, 这个对角线生成的 binary string 和每一行都不一样. 因为每一样都进行了取反操作.  
+所以, 这样, 就不存在一一映射的关系.也就是说, {0,1}Ω 是不可数集合.  
 
 *halting problem*
 
@@ -61,7 +105,17 @@ _这个地方得出了矛盾, 不懂_
 t 本身可数, 所以 Q'(t) 将不返回.
 而根据 Q' 的定义, 它之后在 not(t halts) 的时候返回.
 
-GCD theorem
-1. Prime Factorization
-2. 欧几里得法得 gcd 
-3. 线性组合
+
+## Structure
+
+### Number Theorem 
+
+GCD(最大公约数) theorem gcd(a,b) = n
+
+同余类 congruence modulo: a = b(mod n)
+
+1. 欧几里得法得 gcd 
+2. Prime Factorization
+3. 线性组合gcd(a, b) = n 可以写成 xXa + yXb = n. 或者说, n 是 a 与 b 的线性组合.
+
+欧拉公式
