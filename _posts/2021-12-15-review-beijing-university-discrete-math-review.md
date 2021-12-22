@@ -1,4 +1,6 @@
---- title: "[ Read ] 北京大学离散数学视频回顾" subtitle: "「笔记」"
+--- 
+title: "[ Read ] 北京大学离散数学视频回顾" 
+subtitle: "「笔记」"
 layout: post
 author: "NagleZh"
 header-style: text
@@ -322,13 +324,13 @@ poset ,偏序集
 - 单调函数 单调增， 单调减， input & output 是偏序集。  
 - 自然映射/典型映射 一个元素对应到等价类，或者说等价关系。例如，所有男人都是渣男，看看谁谁谁都那么渣。  
 
-A = {a,b,c,d,}  
-A/R={{a,b},{c},{d}}  
+A = \{a,b,c,d,\}  
+A/R={\{a,b\},\{c\},\{d\}}  
 F:A -> A/R, F(x) = [x]  
-            F(a) = {a,b},  
-            F(b) = {a,b},  
-            F(c) = {c},  
-            F(d) = {d},  
+            F(a) = \{a,b\},  
+            F(b) = \{a,b\},  
+            F(c) = \{c\},  
+            F(d) = \{d\},  
 
 函数合成 fOg:A -> C; fOg(x) = f(g(x))  
 
