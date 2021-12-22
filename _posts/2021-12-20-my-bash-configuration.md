@@ -12,14 +12,15 @@ tags:
 
 # 我的 shell 配置清单
 
-1. autojump
-2. fzf (https://github.com/junegunn/fzf)
-3. emacs (spacemacs, helm )
-4. tmux (oh my tmux)
-5. kubectl (kubectx, kube ns, krew)
-6. kube-ps1 - 在 shell 的 command line 下可以显示当前 k8s 的 ctx + ns. 需要修改 prompt   
-7. ohmyzsh (plugins: git helm kubectl kube-ps1)
-8. git/terraform
+- autojump
+- fzf (https://github.com/junegunn/fzf)
+- emacs (spacemacs, helm )
+- tmux (oh my tmux)
+- kubectl (kubectx, kube ns, krew)
+- kube-ps1 - 在 shell 的 command line 下可以显示当前 k8s 的 ctx + ns. 需要修改 prompt   
+- ohmyzsh (plugins: git helm kubectl kube-ps1)
+- git/terraform
+- helm
 
 
 ### spacemacs yaml custom define configuration

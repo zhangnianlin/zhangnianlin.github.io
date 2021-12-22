@@ -59,6 +59,11 @@ application three:
 
 ### countable & uncountable
 
+康托尔的想法:  
+bij & surj & inj 代表不同的大小.  
+
+A surj B , B surj A <=> A bij B  
+
 一个 set 是否是可数的? 如何定义?   
 一个 set 是可数的, 就是说, 给定一个顺序, 我根据其 index 顺利的获取其内容.  
 N 就是可数的, 因为 0, 1, 2 , 给定顺序, 就可以得到相应的值. 1 就是 1, 2 就是 2.  
@@ -84,6 +89,8 @@ e {1 1 1 1 ... 1 1 1 1 0 0 0 ... }
 所以, 这样, 就不存在一一映射的关系.也就是说, {0,1}Ω 是不可数集合.  
 
 *halting problem*
+
+Noncomputable Sets  
 
 这个问题表示很不能理解.  
 
