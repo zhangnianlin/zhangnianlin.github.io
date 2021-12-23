@@ -19,8 +19,8 @@ tags:
 - kubectl (kubectx, kube ns, krew)
 - kube-ps1 - 在 shell 的 command line 下可以显示当前 k8s 的 ctx + ns. 需要修改 prompt   
 - ohmyzsh (plugins: git helm kubectl kube-ps1)
-- git/terraform
-- helm
+- git/terraform/helm
+- [tfk8s](https://github.com/jrhouston/tfk8s)
 
 
 ### spacemacs yaml custom define configuration
