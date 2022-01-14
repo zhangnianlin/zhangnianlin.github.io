@@ -7,8 +7,8 @@ permalink: /cv/
 ## Personal Information
 * * *
 
-|**Github**: https://www.github.com/NagleZhang  | **Site**: https://nagle.top |   **Email**: nagle.zhang@qq.com |
 
+| ** https://www.github.com/NagleZhang**  | ** [site](https://nagle.top) ** |   **nagle.zhang@qq.com** |
 
 
 ## Quick Overview
