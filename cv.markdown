@@ -21,7 +21,7 @@ permalink: /cv/
 * * *
 #### SAP (Kubernetes , Devops Engnieer) 2019.12 - Current
 
-Keyword: Open Source, Software Engineering, Low Level Coding
+*** Keyword: Open Source, Software Engineering, Low Level Coding ***
 
   - Using open source code to implement CI/CD pipeline on jenkins.
   - Implement platform base on kubernetes.
@@ -30,7 +30,7 @@ Keyword: Open Source, Software Engineering, Low Level Coding
 
 #### Seedlink (Public Cloud, Devops Engineer) 2019.06 - 2019.12
 
-Kyeword: Learn from Failure, Consolidate
+*** Kyeword: Learn from Failure, Consolidate  ***
 
   - Dockerlize all the service, design Docker Arch.
   - Refactoring CI/CD workflow by using Jenkins.(follow ![moby](https://github.com/moby/moby/blob/master/Jenkinsfile) workflow)
@@ -40,7 +40,7 @@ Kyeword: Learn from Failure, Consolidate
 
 #### Strikingly (Public Cloud, Devops Engineer) 2018.03 - 2019.06
 
-Keyword: Public Cloud, Infrastructure As Code, A Bigger Wrold
+*** Keyword: Public Cloud, Infrastructure As Code, A Bigger Wrold ***
 
   - maintain fully automated CI/CD pipelines for code deployment using gitlab-ci. 
   - Maintain infrastructure on AWS by terraform.  
@@ -52,7 +52,7 @@ Keyword: Public Cloud, Infrastructure As Code, A Bigger Wrold
    
 #### eHi Car Rental Service(Private Cloud, DevOps Enginner) 2015.07 - 2018.03 
 
-Keyword: Private Cloud, Manually Operation, Scripting, Analsis
+*** Keyword: Private Cloud, Manually Operation, Scripting, Analsis ***
 
   - Setup Elastic stack(Elasticsearch+Logstash+Kibana) for log analysis. 
   - Automated extract daily data from elasticsearch by using python. 
@@ -63,9 +63,9 @@ Keyword: Private Cloud, Manually Operation, Scripting, Analsis
     
 #### Power Dekor Floor factory ( IT Help Desk Support, Manager)  2012.02 - 2015.06 
 
-Keyword: Cooperate, Comminunication
+*** Keyword: Cooperate, Comminunication ***
 
-  - Build network for office which support 100+ clients. 
+  - Build network for office which support 100+ clients.  
   - Troubleshoting with network traffics. 
   - Manage IT depatment, wrote weekly report. 
   - Wrote powerpoint report for CEO. 
