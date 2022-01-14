@@ -16,9 +16,7 @@ permalink: /cv/
 
 3 years of IT management experience, and Profile Skilled DevOps Engineer with 6+ years experience. passionate with problem solving. Strong experienced with elastic stack and monitoring ecosystem. maintainer of 500+ instances on bare metal in IDC. Maintained multiple region(AWS JP/CN) Saas platform. IaC beleiver, Lifelong learner.
 
-## WORK Experience
-* * *
-### Company Timeline View
+## Company Timeline View
 
 * * *
 #### SAP (Kubernetes , Devops Engnieer) 2019.12 - Current
@@ -72,7 +70,7 @@ Keyword: Cooperate, Comminunication
   - Manage IT depatment, wrote weekly report. 
   - Wrote powerpoint report for CEO. 
 
-### Project View
+## Project View
 
 ***
 #### 2021.6 - 2022.1 Kubernetes application management code.
