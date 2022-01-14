@@ -15,6 +15,7 @@ permalink: /cv/
 3 years of IT management experience, and Profile Skilled DevOps Engineer with 6+ years experience. passionate with problem solving. Strong experienced with elastic stack and monitoring ecosystem. maintainer of 500+ instances on bare metal in IDC. Maintained multiple region(AWS JP/CN) Saas platform. IaC beleiver, Lifelong learner.
 
 ## WORK Experience
+* * *
 ### Company Timeline View
 
 * * *
