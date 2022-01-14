@@ -19,7 +19,7 @@ permalink: /cv/
 ### Company Timeline View
 
 * * *
-##### SAP (Kubernetes , Devops Engnieer) 2019.12 - Current
+#### SAP (Kubernetes , Devops Engnieer) 2019.12 - Current
 
 Keyword: Open Source, Software Engineering, Low Level Coding
 
@@ -28,7 +28,7 @@ Keyword: Open Source, Software Engineering, Low Level Coding
   - Apply Infrastructure as Code for team by using terraform and helm.
   - next step: want to apply eBPF to system, enhance system transprancy.
 
-##### Seedlink (Public Cloud, Devops Engineer) 2019.06 - 2019.12
+#### Seedlink (Public Cloud, Devops Engineer) 2019.06 - 2019.12
 
 Kyeword: Learn from Failure, Consolidate
 
@@ -38,7 +38,7 @@ Kyeword: Learn from Failure, Consolidate
   - Apply terraform in team.
   - Integrated Jenkins with Teams by groovy.
 
-##### Strikingly (Public Cloud, Devops Engineer) 2018.03 - 2019.06
+#### Strikingly (Public Cloud, Devops Engineer) 2018.03 - 2019.06
 
 Keyword: Public Cloud, Infrastructure As Code, A Bigger Wrold
 
@@ -50,7 +50,7 @@ Keyword: Public Cloud, Infrastructure As Code, A Bigger Wrold
   - Mantain game k8s production on tencent Cloud. 
   - Setup data pipeline,which scrap data from eos to elasticsearch by using python and AWS lambda. 
    
-##### eHi Car Rental Service(Private Cloud, DevOps Enginner) 2015.07 - 2018.03 
+#### eHi Car Rental Service(Private Cloud, DevOps Enginner) 2015.07 - 2018.03 
 
 Keyword: Private Cloud, Manually Operation, Scripting, Analsis
 
@@ -61,7 +61,7 @@ Keyword: Private Cloud, Manually Operation, Scripting, Analsis
   - Translate Elastlaert document from English to Chinese. 
   - Reduce problem detecting and solving time from 1 hour to 5 minutes by using alert and log. 
     
-##### Power Dekor Floor factory ( IT Help Desk Support, Manager)  2012.02 - 2015.06 
+#### Power Dekor Floor factory ( IT Help Desk Support, Manager)  2012.02 - 2015.06 
 
 Keyword: Cooperate, Comminunication
 
@@ -73,7 +73,7 @@ Keyword: Cooperate, Comminunication
 ### Project View
 
 ***
-##### 2021.6 - 2022.1 Kubernetes application management code.
+#### 2021.6 - 2022.1 Kubernetes application management code.
   - openstack
   - terraform 
   - hashcorp vault & external secrets 
@@ -87,7 +87,7 @@ support developer onboarding their project by pull request on github. and hashic
 kong ingress is incharge of authentication & authrozation(oidc). 
 monitoring using loki & grafana, some are using efk. 
 
-##### 2019.12 - 2021.6 CI/CD System Enhancement
+#### 2019.12 - 2021.6 CI/CD System Enhancement
 
 Jenkins Shared Library for Monitoring Jenkins pipeline execution time
 
@@ -98,7 +98,7 @@ Jenkins Shared Library for Monitoring Jenkins pipeline execution time
 A unified CI/CD system writen by jenkins pipeline & groovy , most part are groovy.   
 using groovy to do data extraction , put it on influxdb. and analysis on grafana.   
 
-##### 2018.3 - 2019.12 Infrastructure Management System
+#### 2018.3 - 2019.12 Infrastructure Management System
 
   - AWS vpc/peering/ec2/s3/dynamodb/auto-scaling/security group/ami and so on
   - Elasticsearch
@@ -116,7 +116,7 @@ provision app environment it's about setup application spefic package, and envir
 deploy application, is to run container on ec2, and this part can be reused by CD system.  
 Using jenkins to do CI/CD.  
 
-##### 2015.7 - 2018.3 Monitoring System
+#### 2015.7 - 2018.3 Monitoring System
 
   - Elasticsearch, Kibana , Logstash
   - Elastalert
