@@ -7,19 +7,17 @@ permalink: /cv/
 ## Personal Information
 * * *
 
-**Email**: zhang.nagle@qq.com
+**Email**: nagle.zhang@qq.com
 
-## Profile(Quick Overview)
+## Quick Overview
 * * *
-IT management with 3 years experience, and Profile Skilled DevOps Engineer with 6+ years experience. passionate with problem solving. Strong experienced with elastic stack and monitoring ecosystem. maintainer of 500+ instances on bare metal in IDC. Maintained multiple region(AWS JP/CN) Saas platform. Dream to be a hacker, a emacs lover. 
+
+3 years of IT management experience, and Profile Skilled DevOps Engineer with 6+ years experience. passionate with problem solving. Strong experienced with elastic stack and monitoring ecosystem. maintainer of 500+ instances on bare metal in IDC. Maintained multiple region(AWS JP/CN) Saas platform. IaC beleiver, Lifelong learner.
 
 ## WORK Experience
+### Company Timeline View
 
-
-### Timeline View ( My Job Journey )
 * * *
-
-
 ##### SAP (Kubernetes , Devops Engnieer) 2019.12 - Current
 
 Keyword: Open Source, Software Engineering, Low Level Coding
@@ -72,6 +70,7 @@ Keyword: Cooperate, Comminunication
   - Wrote powerpoint report for CEO. 
 
 ### Project View
+
 ***
 ##### 2021.6 - 2022.1 Kubernetes application management code.
   - openstack
