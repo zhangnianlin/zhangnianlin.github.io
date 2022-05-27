@@ -35,10 +35,10 @@ def: a = b(mod n) iff n | (a-b)
 
 eg. 
 30 = 12 (mod 9) 
-1. rem(30, 9) = 3 = rem(12, 9)
-2. 30 = 2*9 + 12
-3. 9 | ( 30 - 12 )
-4. 12(mod 9) = 3
+1. `rem(30, 9) = 3 = rem(12, 9)`
+2. `30 = 2*9 + 12`
+3. `9 | ( 30 - 12 )`
+4. `12(mod 9) = 3`
 
 gcd(30, 12) = 2\*12 + 6
 gcd(12, 6) = 2\*6
@@ -59,6 +59,6 @@ now , we know k, b. how to calculate a?
 a, k is a num between 0 - 26
 rem(a.k, 26)
 a.k(mod 26) = r
-26|(r - a.k) = 0
+26\|(r - a.k) = 0
 
 
