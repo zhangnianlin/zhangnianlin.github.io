@@ -31,62 +31,83 @@ overview， 离散数学研究的领域：
 
 p q r 代表命题， 为真或者为假  
 
-- ～ 否
-- v 或者 
-- ^ 并且 合取式
-- -> 蕴含 implies 
-- <-> 等价 
+- $\lnot$ 否
+
+- $\lor$ 或者 
+
+- $\land$ 并且 合取式
+
+- $\to$ 蕴含 implies 
+
+- $\leftrightarrow$ 等价 
 
 以上存在优先级,从上至下。  
 
-- 可满足
+- 可满足 
 - 矛盾式 永假
 - 重言式 永假
 
 ### 等值演算
 
-A <=> B:  A <-> B 是用真式   
+$A \Leftrightarrow B$: $A \leftrightarrow B$ 是永真式   
 
 公式之间可以进行演算。  
 
 16 组等值演算律
 
-1. 幂等律 A <=> A v A , A <=> A ^ A  
-2. 交换律 A v B <=> B v A, A ^ B <=> B ^ A
-3. 结合律 (A v B) v C <=> A v (B v C) / (A ^ B) ^ C <=> A ^ (B ^ C)
+1. 幂等律 $A \Leftrightarrow A \land A $ , $A \Leftrightarrow A \lor A$ ;
+2. 交换律 $A \land B \Leftrightarrow B \land A, A \lor B \Leftrightarrow B \lor A$;
+3. 结合律 $(A \lor B) \lor C \Leftrightarrow A \lor (B \lor C), (A \land B) \land C \Leftrightarrow A \land (B \land C)$ 
 4. 分配律
-5. 德摩根定律
+   1.  $A \land (B \lor C) \Leftrightarrow (A \land B) \lor (A \land C) $;
+   2. $A \lor (B \land C) \Leftrightarrow (A \lor B) \land (A \lor C)$;
+5. 德摩根定律 
+   1. $\lnot(A \land B) \Leftrightarrow \lnot A \lor \lnot B$;
+   2. $\lnot(A \lor B) \Leftrightarrow \lnot A \land \lnot B$;
 6. 吸收率
-7. 零律
-8. 同一律
-9. 排中律
-10. 矛盾律
+   1. $A \land ( A \lor B) \Leftrightarrow A$；
+   2. $A \lor (A \land B) \Leftrightarrow A$;
+7. 零律（相当实数的 0）
+   1. $A \land 0 \Leftrightarrow 0$;
+   2. $A \lor 1 \Leftrightarrow 1$;
+8. 同一律（相当于实数的 1） 
+   1. $A \land 1 \Leftrightarrow A$;
+   2. $A \lor 0 \Leftrightarrow A$;
+9. 排中律 $A \lor \lnot A \Leftrightarrow 1$; 单独提到这个排中律是存在争议的，比如说，“我说的这句话是假的” 这句话本身是真是假？就不符合排中律。
+10. 矛盾律 $A \land \lnot A \Leftrightarrow 0$;
 
-...
 
-值得记忆的是， 德摩根定律
-
-~(A v B) <=> ~A ^ ~B  
 
 ## 第二课
 
-11. 双重否定律
-12. 蕴含等值 A -> B <=> ~A v B
-13. 等价等值式
-14. 等价否定等值式 A <-> B <=>  ~B <-> ~A
-15. 假言易位 A -> B <=>  ~B -> ~A
-16. 归谬论 （A -> B) ^ (A -> ~B) <=> ~A （或者说，反证法经常用)  
+11. 双重否定律 $\lnot \lnot A \Leftrightarrow A$;
+12. 蕴含等值 $A \to B \Leftrightarrow \lnot A \lor B$;
+13. 等价等值式$A \leftrightarrow B \Leftrightarrow (A \to B) \land (B \to A)$;
+14. 假言易位 $A \to B \Leftrightarrow \lnot B \to \lnot A$;
+15. 归谬论 $(A \to B) \land (A \to =\lnot B) \Leftrightarrow \lnot A$;（或者说，反证法经常用)  
 
 根据上面的等值式， 可以开始进行等值演算。  
 
-例子： $p -> (q -> r)$  
+例子： 证明 $p \to (q \to r)$ 等价 $(p \land q) \to r$;
 
-### 重要的推理定律 9:00 若 $A \to B$ 是永真式， 则 $A \Rightarrow B$
+$\Leftrightarrow p \to (\lnot q \lor r)$;
+
+$\Leftrightarrow \lnot p \lor (\lnot q \lor r)$;
+
+$\Leftrightarrow \lnot p \lor \lnot q \lor r$;
+
+$\Leftrightarrow \lnot(p \land q) \lor r$;
+
+$\Leftrightarrow (p \land q) \to r$;
+
+### 重要的推理定律 9:00
+
+###### 若 A 和 B 是两个命题，其中 $A \to B$ 是永真式(重言式)， 则 $A \Rightarrow B$，简称 A 推出 B；
 
 上面是等值演算，接下来的部分根据等值演算，来进行推理，以及其中的一些推理定律。
 
-1. 附加律 $A \Rightarrow A \lor B$ .
-2. 化简律 $A \land B \Rightarrow A$ . 
+1. 附加律 $A \Rightarrow A \lor B$ .这个的意思也就是 $A \to (A \lor B)$ 是永真式, 人话就是如果 A 成立，则 A 或 B一定成立;
+2. 化简律 $A \land B \Rightarrow A$.  $A \land B \to A$ 如果 A 与 B 成立，则 A 一定成立; 
 3. 假言推理 $(A \to B) \land A \Rightarrow B$ .
    1. 因为 A 所以 B，A 成立，所以 B 也成立。
 4. 拒取式 $(A \to B) \land \lnot B \Rightarrow \lnot A$ . 
@@ -123,11 +144,11 @@ A <=> B:  A <-> B 是用真式
 
 例子： 
 
-$\forall x(F(x) \to G(x))$  ，对于所有的，F（x）x 是人，那么 Gx，是要是的。只要是人，都会死的。 
+$\forall x(F(x) \to G(x))$  ，对于所有的，$F(x)$ x 是人，那么 $G(x)$----只要是人,都会死的. 
 
-$\exists x(F(x) \land G(x))$ , there exists F(x) x is a person. and G(x) -- X is smorking. some people smoke. 
+$\exists x(F(x) \land G(x))$ , there exists $F(x)$ x is a person. and $G(x)$ -- X is smorking. some people smoke. 
 
-- 有限个体域可以消去量词  
+- 有限个体域可以消去量词
 
 - 量词可以进行否定
   
@@ -137,38 +158,34 @@ $\exists x(F(x) \land G(x))$ , there exists F(x) x is a person. and G(x) -- X is
 
 - 量词管辖域的收缩与扩张
   
-  - $\forall x(A(x) \lor B) \Leftrightarrow \forall x(A(x)) \lor B$  . 
+  - $\forall x(A(x) \lor B) \Leftrightarrow \forall x(A(x)) \lor B$;
   
-  - $\forall x(A(x) \land B) \Leftrightarrow \forall x(A(x)) \land B$
+  - $\forall x(A(x) \land B) \Leftrightarrow \forall x(A(x)) \land B$;
   
-  - $\forall x(A(x) \to B) \Leftrightarrow \exists x A(x) \to B$ .
-    
-    - 
+  - $\forall x(A(x) \to B) \Leftrightarrow \exists x A(x) \to B$;
   
-  - $\forall x(B \to A(x)) \Leftrightarrow B \to \forall xA(x)$ .
-  
-  - 
+  - $\forall x(B \to A(x)) \Leftrightarrow B \to \forall xA(x)$;
 
 ## 第三课
 
-等价 <=>   
-推理 =>  
+等价 $\Leftrightarrow$;
+推理 $\Rightarrow$; 
 接着上一课仍然讲量词辖域的收缩与扩张  
 
 量词分配 
 
-- ForAll(A(x) ^ B(x))  <=> ForAllA(x) ^ ForAll B(x)  
+- 分配1 $\forall(A(x)\land B(x)) \Leftrightarrow \forall A(x) \land \forall B(x)$;
 
-- ThereExist(A(x) v B(x)) <=> ThereE A(x) v ThereEB(x)  
+- 分配2 $\exists (A(x) \lor B(x)) \Leftrightarrow \exists A(x) \lor \exists B(x)$;
 
-前束范式： 存在量词在最前面, 且作用到公式尾部。  
+前束范式：谓词存在量词在最前面, 且作用到公式尾部。  
 
 重要的推理定律：  
 
-1. ForA x A(x)v ForA B(x) => ForA (A(x) v B(x))  
-2. ThereE x (A(x) ^ B(x)) => ThereE x A(x) ^ ThereE x B(x)  
-3. ForA (A(x) -> B(x)) => ForA x A(x) -> ForA x B(x)
-4. ForA x (A(x) -> B(x) ) => ThereE x A(x) -> ThereE x B(x)
+1. "$\forall xA(x) \lor \forall xB(x) \Rightarrow \forall x(A(x) \lor B(x)$"
+2. "$\exists xA(x)\land B(x) \Rightarrow \exists xA(x) \land \exists B(x)$"
+3. "$\forall xA(x) \to B(x) \Rightarrow \forall xA(x) \to \forall xB(x)$"
+4. "$\forall x(A(x) \to B(x)) \Rightarrow \exists xA(x) \to \exists xB(x)$"
 
 ### 28:00 开始讲集合论
 
