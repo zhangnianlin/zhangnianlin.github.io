@@ -41,7 +41,7 @@ p q r 代表命题， 为真或者为假
 
 - $\leftrightarrow$ 等价 
 
-以上存在优先级,从上至下。  
+以上存在优先级,从上至下.
 
 - 可满足 
 - 矛盾式 永假
@@ -59,7 +59,7 @@ $A \Leftrightarrow B$: $A \leftrightarrow B$ 是永真式
 2. 交换律 $A \land B \Leftrightarrow B \land A, A \lor B \Leftrightarrow B \lor A$;
 3. 结合律 $(A \lor B) \lor C \Leftrightarrow A \lor (B \lor C), (A \land B) \land C \Leftrightarrow A \land (B \land C)$ 
 4. 分配律
-   1.  $A \land (B \lor C) \Leftrightarrow (A \land B) \lor (A \land C) $;
+   1. $A \land (B \lor C) \Leftrightarrow (A \land B) \lor (A \land C) $;
    2. $A \lor (B \land C) \Leftrightarrow (A \lor B) \land (A \lor C)$;
 5. 德摩根定律 
    1. $\lnot(A \land B) \Leftrightarrow \lnot A \lor \lnot B$;
@@ -75,8 +75,6 @@ $A \Leftrightarrow B$: $A \leftrightarrow B$ 是永真式
    2. $A \lor 0 \Leftrightarrow A$;
 9. 排中律 $A \lor \lnot A \Leftrightarrow 1$; 单独提到这个排中律是存在争议的，比如说，“我说的这句话是假的” 这句话本身是真是假？就不符合排中律。
 10. 矛盾律 $A \land \lnot A \Leftrightarrow 0$;
-
-
 
 ## 第二课
 
@@ -148,13 +146,56 @@ $\forall x(F(x) \to G(x))$  ，对于所有的，$F(x)$ x 是人，那么 $G(x)$
 
 $\exists x(F(x) \land G(x))$ , there exists $F(x)$ x is a person. and $G(x)$ -- X is smorking. some people smoke. 
 
+$F(x)$: x 是火车, $G(x)$: x 是汽车, $H(x,y)$: x 比 y 快
+
+$\forall x(F(x)\to \forall y(G(y)\to H(x,y)))$ ; 对于所有的是火车的,比所有的是汽车的都要快.
+
+$\exists x(G(x) \land \exists y(F(y) \to H(x,y)))$; 有的汽车比火车要快;
+
+
+
+- 解释 $\forall x(F(x) \to \exists y(G(y) \land H(x,y,z)))$;
+  
+  - 在上述的例子当中, 给每一个命题提供一个解释
+    
+    - $F(x)$ x 是实数
+    
+    - $G(x)$ x 是整数
+    
+    - $H(x,y,z) ;x+y = z$.
+    
+    - 公式作用域是全总个体域
+  
+  - 紧跟着量词的是指导变元(上例中 x,y 都是指导变元)
+  
+  - 量词后面紧跟的括号就是这个量词的辖域, 而在括号里面的指导变元就是约束出现.
+  
+  - 在指导变元的辖域当中,但是不是指导变元,则称之为自由出现. (z 就是自由出现)
+  
+  - 上面的例子可以理解为: 对于所有的实数 x, 存在整数 y,使的 x + y = z
+
+### 一阶谓词逻辑等值式与基本等值
+
+等值式的定义: $A \Leftrightarrow B$ : $A \leftrightarrow B$ 为用真式, 以下四种情况满足用真式. 
+
 - 有限个体域可以消去量词
+  
+  - 如果是有限的个体域,$\forall$ 可以转换为每个个体相与
+  
+  - $\exists$ 可以转换为每个个体相或
 
 - 量词可以进行否定
   
-  - 全称量词的否定：$\neg\forall x, P(x) \Leftrightarrow \exists x, P(x) $ 表示存在某个 $x$，使得 $P(x)$ 不成立。
+  - 全称量词的否定：$\neg\forall x, P(x) \Leftrightarrow \exists x, P(x) $ 不是所有的都满足,同时也表示存在某个 $x$，使得 $P(x)$ 不成立。
   
-  - 存在量词的否定：  $\neg\exists x, P(x) \Leftrightarrow \forall x, \lnot P(x)$  表示所有 $x$ 都不满足 $P(x)$。
+  - 存在量词的否定：  $\neg\exists x, P(x) \Leftrightarrow \forall x, \lnot P(x)$  不存在满足, 表示所有 $x$ 都不满足 $P(x)$。
+
+
+
+## 第三课
+
+
+
 
 - 量词管辖域的收缩与扩张
   
@@ -163,22 +204,46 @@ $\exists x(F(x) \land G(x))$ , there exists $F(x)$ x is a person. and $G(x)$ -- 
   - $\forall x(A(x) \land B) \Leftrightarrow \forall x(A(x)) \land B$;
   
   - $\forall x(A(x) \to B) \Leftrightarrow \exists x A(x) \to B$;
+    
+    - 解释一下: 前面的公式是对于任何的 x, 如果 A(x) 为真, 则 B 为真
+    
+    - 后面的公式, 存在 x, 使得 A(x)为真, 则 B 为真.
+    
+    - 自然语言不太好描述.
+    
+    - $\forall x(A(x) \to B)$
+    
+    - $\Leftrightarrow \forall x(\lnot A(x)\lor B)$
+    
+    - $\Leftrightarrow \forall x \lnot A(x) \lor B$
+    
+    - $\Leftrightarrow \lnot\exists xA(x) \lor B$
+    
+    - $\Leftrightarrow \exists xA(x) \to B$
+
+- $\forall x(B \to A(x)) \Leftrightarrow B \to \forall xA(x)$;
+
+- 量词分配 10:30
   
-  - $\forall x(B \to A(x)) \Leftrightarrow B \to \forall xA(x)$;
+  - 分配1 $\forall(A(x)\land B(x)) \Leftrightarrow \forall A(x) \land \forall B(x)$;
+  
+  - 分配2 $\exists (A(x) \lor B(x)) \Leftrightarrow \exists A(x) \lor \exists B(x)$;
 
-## 第三课
+- 前束范式：谓词存在量词在最前面, 且作用到公式尾部.下面的例子就是如何重构成一个前束范式.
+  
+  - $\forall xF(x) \lor \lnot\exists xG(x,y)$
+  
+  - $\Leftrightarrow \forall xF(x) \lor \forall x\lnot G(x,y)$
+  
+  - $\Leftrightarrow \forall xF(x) \lor \forall z\lnot G(z,y))$
+  
+  - $\Leftrightarrow \forall x(F(x) \lor \forall z\lnot G(z,y))$
+  
+  - $\Leftrightarrow \forall x\forall z(F(x) \lor\lnot G(z,y))$
+  
+  - $\Leftrightarrow \forall x\forall z(G(z,y) \to F(x))$
 
-等价 $\Leftrightarrow$;
-推理 $\Rightarrow$; 
-接着上一课仍然讲量词辖域的收缩与扩张  
-
-量词分配 
-
-- 分配1 $\forall(A(x)\land B(x)) \Leftrightarrow \forall A(x) \land \forall B(x)$;
-
-- 分配2 $\exists (A(x) \lor B(x)) \Leftrightarrow \exists A(x) \lor \exists B(x)$;
-
-前束范式：谓词存在量词在最前面, 且作用到公式尾部。  
+  
 
 重要的推理定律：  
 
