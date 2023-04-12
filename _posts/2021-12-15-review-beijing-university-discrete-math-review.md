@@ -152,8 +152,6 @@ $\forall x(F(x)\to \forall y(G(y)\to H(x,y)))$ ; 对于所有的是火车的,比
 
 $\exists x(G(x) \land \exists y(F(y) \to H(x,y)))$; 有的汽车比火车要快;
 
-
-
 - 解释 $\forall x(F(x) \to \exists y(G(y) \land H(x,y,z)))$;
   
   - 在上述的例子当中, 给每一个命题提供一个解释
@@ -190,12 +188,7 @@ $\exists x(G(x) \land \exists y(F(y) \to H(x,y)))$; 有的汽车比火车要快;
   
   - 存在量词的否定：  $\neg\exists x, P(x) \Leftrightarrow \forall x, \lnot P(x)$  不存在满足, 表示所有 $x$ 都不满足 $P(x)$。
 
-
-
 ## 第三课
-
-
-
 
 - 量词管辖域的收缩与扩张
   
@@ -252,7 +245,7 @@ $\exists x(G(x) \land \exists y(F(y) \to H(x,y)))$; 有的汽车比火车要快;
 3. "$\forall xA(x) \to B(x) \Rightarrow \forall xA(x) \to \forall xB(x)$"
 4. "$\forall x(A(x) \to B(x)) \Rightarrow \exists xA(x) \to \exists xB(x)$"
 
-### 28:00 开始讲集合论
+### 集合论 28:50
 
 1. 集合的概念
 2. 集合之间的关系
@@ -267,10 +260,103 @@ $\exists x(G(x) \land \exists y(F(y) \to H(x,y)))$; 有的汽车比火车要快;
 
 ## 第四课
 
-集合的运算方式  
+##### 集合的简介
 
-集合，子集，真子集，空集，幂集，n元集，指标集  
-交并补, 相对补集，对称差，绝对补，广义并，广义交  
+1. 集合是一种描述工具
+
+2. 集合一种通用的语言
+
+3. 集合可以进行思维训练
+
+德国数学家康托 contor 发明了集合论(朴素集合论). 集合论的目的是为了给数学确定基础.集合论是数学当中最基本的概念. 朴素集合论是存在矛盾的.所以引出了公理集合论. 用公理来保证集合的准确性.
+
+其中一个典型的例子就是罗素悖论.
+
+罗素悖论定义如下:
+
+- $X=\{x\mid x\ne \emptyset\}, \{a\}\ne \emptyset, \{a\}\in X, X\notin \emptyset, X\in X$; x 包含自己, 
+
+- $\emptyset \notin \emptyset, \{a\}\notin\{a\},\exists x(x\notin x)$; x 不包含自己.
+
+- $S = \{ x \mid x\notin x\}$ ; x 不属于自己的集合构成的集合.
+
+问: 
+
+- $S \in S ?$
+
+- $S \in S \Rightarrow S \notin S$
+
+- $S \notin S \Rightarrow S \in S$
+
+上面罗素悖论的公式用自然语言描述: 
+
+- 有的集合自己是自己的元素(所有包含十个元素以上的集合)
+
+- 有的集合自己不是自己的元素(某公司5月1号上班的人)
+
+- 不属于自己的集合构成一个集合 S. 
+
+- 集合 S 本身是否属于 S 集合? 
+
+- 如果 S 属于 S, 则 S 不满足集合的 S 的性质.它不属于自己.
+
+- 如果 S 不属于 S, 则 S 满足集合 S 的性质, 它属于自己. 得出矛盾.
+
+
+
+##### 集合的表示方法
+
+- 列举法 ,就是全部列出来, 不讲究顺序,允许重复
+
+- 描述法, x 是人, x 是整数 $\{x\mid P(x)\}$ 可以与列举法转换.
+
+- 特征函数法
+
+- 文氏图
+
+- 常用的数的集合
+  
+  - N: 自然数 $\{0,1,2,3...\}$
+  
+  - Z: 整数 $\{0,\pm1,\pm2,\pm3...\}$
+  
+  - Q: 有理数 
+  
+  - R: 实数
+  
+  - C: 复数
+
+集合的类型以及运算方式  
+
+- 集合 set
+
+- 子集 $A\subset B$
+
+- 真子集 $A\subseteq B$
+
+- 空集(0元集) $\empty$
+
+- 全集 $E$
+
+- 幂集 $P(A)=\{x\mid x\subseteq A\}, |P(A)|=2^n$ 
+
+- n元集: 含有 n 个元素的集合.
+
+- $|A|$ 表示集合 A 中元素的个数.
+
+- 指标集 就是集合 index 的集合
+
+- 交并补 
+
+- 相对补集
+
+- 对称差
+
+- 绝对补
+
+- 广义并
+
+- 广义交  
 
 容斥原理， principle of inclusion/exclusion  
 主要是用于 counting， 可以说是用数论来计数，但是计算的是集合交集的运算方式。  
